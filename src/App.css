@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #ddd;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.step {
+  text-align: center;
+  color: gray;
+}
+
+.step-number {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  padding: 9px;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+}
+
+.step.active {
+  color: #2563eb;
+}
+
+.step.active .step-number {
+  background: #2563eb;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  gap: 30px;
+}
+
+.buttons button:last-child {
+  margin-left: auto;
+}
+
+.btn {
+  background: #2724ec;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
